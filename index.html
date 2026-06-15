@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPK Profile Matching - UMKM Thrifting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistem Pendukung Keputusan (SPK)</h1>
+            <h2>Pemilihan Admin Media Sosial UMKM Thrifting</h2>
+            <p>Metode <strong>Profile Matching</strong></p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h3>1. Data Pelamar & Profil Target Ideal</h3>
+                <p>Data mentah pelamar berdasarkan kuesioner dan profil target yang dibutuhkan.</p>
+                <div class="table-responsive">
+                    <table id="table-raw">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Kandidat</th>
+                                <th>K1 (Core)</th>
+                                <th>K2 (Core)</th>
+                                <th>K3 (Core)</th>
+                                <th>K4 (Secondary)</th>
+                                <th>K5 (Secondary)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Diisi oleh JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card">
+                <h3>2. Pemetaan Selisih (GAP)</h3>
+                <p>Menghitung selisih antara nilai pelamar dengan profil target (Pelamar - Target).</p>
+                <div class="table-responsive">
+                    <table id="table-gap">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Kandidat</th>
+                                <th>K1</th>
+                                <th>K2</th>
+                                <th>K3</th>
+                                <th>K4</th>
+                                <th>K5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Diisi oleh JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card">
+                <h3>3. Konversi Bobot GAP</h3>
+                <p>Mengubah nilai selisih menjadi bobot sesuai dengan standar aturan <em>Profile Matching</em>.</p>
+                <div class="table-responsive">
+                    <table id="table-weight">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Kandidat</th>
+                                <th>K1</th>
+                                <th>K2</th>
+                                <th>K3</th>
+                                <th>K4</th>
+                                <th>K5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Diisi oleh JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card">
+                <h3>4. Perhitungan Core Factor (NCF) & Secondary Factor (NSF)</h3>
+                <p>Menghitung rata-rata nilai dari Kriteria Inti (NCF) dan Kriteria Pendukung (NSF).</p>
+                <div class="table-responsive">
+                    <table id="table-factors">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Kandidat</th>
+                                <th>Total Nilai Core</th>
+                                <th>NCF (Core / 3)</th>
+                                <th>Total Nilai Secondary</th>
+                                <th>NSF (Sec / 2)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Diisi oleh JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card highlight-card">
+                <h3>5. Hasil Akhir & Perankingan</h3>
+                <p>Perhitungan nilai total akhir: <strong>(60% &times; NCF) + (40% &times; NSF)</strong></p>
+                <div class="table-responsive">
+                    <table id="table-final">
+                        <thead>
+                            <tr>
+                                <th>Peringkat</th>
+                                <th>Nama Kandidat</th>
+                                <th>NCF (60%)</th>
+                                <th>NSF (40%)</th>
+                                <th>Nilai Total Akhir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Diisi oleh JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 - SPK UMKM Thrifting. Dibuat dengan metode Profile Matching.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
