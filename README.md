@@ -13,6 +13,7 @@ Aplikasi **Sistem Pendukung Keputusan (SPK)** berbasis web untuk membantu pemili
   - [Pembagian Core & Secondary Factor](#pembagian-core--secondary-factor)
   - [Rumus Nilai Total](#rumus-nilai-total)
 - [Fitur Aplikasi Web](#fitur-aplikasi-web)
+- [Hasil Akhir Perankingan](#hasil-akhir-perankingan-output-aplikasi)
 - [Teknologi](#teknologi)
 - [Struktur File](#struktur-file)
 - [Cara Menjalankan](#cara-menjalankan)
@@ -66,15 +67,37 @@ Spreadsheet ini menampung semua jawaban responden secara otomatis dari Google Fo
 | G | K5 - Keterampilan Desain | Nilai Kriteria 5 (Secondary) |
 
 ### Data Aktual Kandidat (dari Spreadsheet per Juni 2026)
+Total **27 kandidat** yang masuk melalui Google Form (data disalin secara statik ke `app.js`):
+
 | Nama Kandidat | K1 | K2 | K3 | K4 | K5 |
 |---|---|---|---|---|---|
-| Hafizh Naufal Raditya | 5 | 5 | 5 | 5 | 5 |
-| Ahmad Fikri | 4 | 2 | 3 | 3 | 2 |
-| Raja Arcenio Ravi Hussain | 3 | 2 | 4 | 4 | 3 |
+| Nabila Lutfia Sari | 5 | 5 | 5 | 5 | 5 |
+| Rita Rahmawati | 4 | 2 | 3 | 3 | 2 |
+| Dhanda Rismanda | 3 | 2 | 4 | 4 | 3 |
 | Elfarizki Naufal | 3 | 4 | 2 | 2 | 3 |
 | Dwi Bagus Purwo Aji | 5 | 5 | 3 | 4 | 4 |
 | Haydar Ali Furqon | 5 | 4 | 5 | 4 | 5 |
 | Yusuf Rafii Ahmad | 3 | 2 | 3 | 4 | 3 |
+| Rizky Maulana | 4 | 3 | 4 | 5 | 4 |
+| Anisa Fitriani | 5 | 4 | 5 | 3 | 4 |
+| Dimas Saputra | 3 | 4 | 3 | 4 | 3 |
+| Putri Wulandari | 5 | 5 | 4 | 4 | 5 |
+| Kevin Pratama | 4 | 3 | 5 | 2 | 4 |
+| Tiara Kusuma | 5 | 4 | 4 | 5 | 4 |
+| Bima Satria | 3 | 2 | 3 | 4 | 3 |
+| Nadya Aulia | 4 | 5 | 5 | 3 | 5 |
+| Reza Aditya | 5 | 4 | 3 | 5 | 4 |
+| Siti Fadhilah | 4 | 4 | 4 | 4 | 4 |
+| Fajar Nugroho | 3 | 5 | 4 | 2 | 3 |
+| Amira Ramadhani | 5 | 4 | 5 | 5 | 5 |
+| Gilang Ramadhan | 4 | 3 | 4 | 4 | 3 |
+| Citra Ayu | 5 | 5 | 4 | 3 | 4 |
+| Dwi Susanto | 2 | 3 | 3 | 4 | 2 |
+| Viona Amelia | 4 | 4 | 5 | 4 | 5 |
+| Ihsan Kamil | 5 | 3 | 4 | 5 | 4 |
+| Sarah Oktaviani | 4 | 5 | 4 | 3 | 3 |
+| Hendra Wijaya | 3 | 4 | 5 | 4 | 3 |
+| Ayu Lestari | 5 | 4 | 5 | 5 | 5 |
 
 ---
 
@@ -149,6 +172,46 @@ Menampilkan hasil perhitungan rata-rata untuk kelompok kriteria Inti (NCF) dan P
 
 ### Tahap 5 — Tabel Hasil Akhir & Perankingan ⭐
 Menampilkan daftar kandidat yang telah diurutkan dari nilai total tertinggi ke terendah. Kandidat peringkat 1 (rekomendasi utama) disorot dengan warna biru khusus dan emoji mahkota 👑 agar mudah teridentifikasi.
+
+---
+
+## Hasil Akhir Perankingan (Output Aplikasi)
+
+Berikut hasil perhitungan *Profile Matching* untuk seluruh **27 kandidat** (target ideal `[5, 4, 4, 4, 3]`). Kandidat dengan nilai total sama diurutkan berdasarkan NCF yang lebih tinggi.
+
+| Peringkat | Nama Kandidat | NCF | NSF | Nilai Total |
+|:---:|---|:---:|:---:|:---:|
+| 🥇 1 | **Tiara Kusuma** 👑 | 5.000 | 4.500 | **4.800** |
+| 2 | Siti Fadhilah | 4.667 | 4.750 | 4.700 |
+| 3 | Anisa Fitriani | 4.833 | 4.250 | 4.600 |
+| 4 | Haydar Ali Furqon | 4.833 | 4.250 | 4.600 |
+| 5 | Putri Wulandari | 4.833 | 4.250 | 4.600 |
+| 6 | Citra Ayu | 4.833 | 4.250 | 4.600 |
+| 7 | Reza Aditya | 4.667 | 4.500 | 4.600 |
+| 8 | Ihsan Kamil | 4.667 | 4.500 | 4.600 |
+| 9 | Dwi Bagus Purwo Aji | 4.500 | 4.750 | 4.600 |
+| 10 | Gilang Ramadhan | 4.333 | 5.000 | 4.600 |
+| 11 | Ayu Lestari | 4.833 | 4.000 | 4.500 |
+| 12 | Amira Ramadhani | 4.833 | 4.000 | 4.500 |
+| 13 | Sarah Oktaviani | 4.500 | 4.500 | 4.500 |
+| 14 | Hendra Wijaya | 4.167 | 5.000 | 4.500 |
+| 15 | Nabila Lutfia Sari | 4.667 | 4.000 | 4.400 |
+| 16 | Viona Amelia | 4.500 | 4.250 | 4.400 |
+| 17 | Rizky Maulana | 4.333 | 4.500 | 4.400 |
+| 18 | Dimas Saputra | 4.000 | 5.000 | 4.400 |
+| 19 | Dhanda Rismanda | 3.667 | 5.000 | 4.200 |
+| 20 | Nadya Aulia | 4.333 | 3.750 | 4.100 |
+| 21 | Fajar Nugroho | 4.167 | 4.000 | 4.100 |
+| 22 | Kevin Pratama | 4.167 | 3.750 | 4.000 |
+| 23 | Bima Satria | 3.333 | 5.000 | 4.000 |
+| 24 | Yusuf Rafii Ahmad | 3.333 | 5.000 | 4.000 |
+| 25 | Rita Rahmawati | 3.667 | 4.000 | 3.800 |
+| 26 | Elfarizki Naufal | 3.667 | 4.000 | 3.800 |
+| 27 | Dwi Susanto | 3.333 | 4.500 | 3.800 |
+
+> **Rekomendasi Utama: Tiara Kusuma** — profilnya tepat memenuhi target pada ketiga kriteria inti (K1, K2, K3 → NCF sempurna 5.000), sehingga unggul meski beberapa kandidat lain memiliki nilai mentah lebih tinggi. Ini menunjukkan karakteristik *Profile Matching*: yang dicari adalah **kesesuaian dengan profil ideal**, bukan sekadar nilai tertinggi.
+
+> ⚠️ Nilai **K5 Ayu Lestari** masih perlu dikonfirmasi (sementara diisi `5`); hasil peringkatnya dapat sedikit berubah jika nilainya berbeda.
 
 ---
 

@@ -1,12 +1,32 @@
-// Data Pelamar dari Google Form / Jurnal
+// Data Pelamar dari Google Form / Spreadsheet (per Juni 2026)
 const candidates = [
-    { name: "Hafizh Naufal Raditya", scores: [5, 5, 5, 5, 5] },
-    { name: "Ahmad Fikri", scores: [4, 2, 3, 3, 2] },
-    { name: "Raja Arcenio Ravi Husse", scores: [3, 2, 4, 4, 3] },
+    { name: "Nabila Lutfia Sari", scores: [5, 5, 5, 5, 5] },
+    { name: "Rita Rahmawati", scores: [4, 2, 3, 3, 2] },
+    { name: "Dhanda Rismanda", scores: [3, 2, 4, 4, 3] },
     { name: "Elfarizki Naufal", scores: [3, 4, 2, 2, 3] },
     { name: "Dwi Bagus Purwo Aji", scores: [5, 5, 3, 4, 4] },
     { name: "Haydar Ali Furqon", scores: [5, 4, 5, 4, 5] },
-    { name: "Yusuf Rafii Ahmad", scores: [3, 2, 3, 4, 3] }
+    { name: "Yusuf Rafii Ahmad", scores: [3, 2, 3, 4, 3] },
+    { name: "Rizky Maulana", scores: [4, 3, 4, 5, 4] },
+    { name: "Anisa Fitriani", scores: [5, 4, 5, 3, 4] },
+    { name: "Dimas Saputra", scores: [3, 4, 3, 4, 3] },
+    { name: "Putri Wulandari", scores: [5, 5, 4, 4, 5] },
+    { name: "Kevin Pratama", scores: [4, 3, 5, 2, 4] },
+    { name: "Tiara Kusuma", scores: [5, 4, 4, 5, 4] },
+    { name: "Bima Satria", scores: [3, 2, 3, 4, 3] },
+    { name: "Nadya Aulia", scores: [4, 5, 5, 3, 5] },
+    { name: "Reza Aditya", scores: [5, 4, 3, 5, 4] },
+    { name: "Siti Fadhilah", scores: [4, 4, 4, 4, 4] },
+    { name: "Fajar Nugroho", scores: [3, 5, 4, 2, 3] },
+    { name: "Amira Ramadhani", scores: [5, 4, 5, 5, 5] },
+    { name: "Gilang Ramadhan", scores: [4, 3, 4, 4, 3] },
+    { name: "Citra Ayu", scores: [5, 5, 4, 3, 4] },
+    { name: "Dwi Susanto", scores: [2, 3, 3, 4, 2] },
+    { name: "Viona Amelia", scores: [4, 4, 5, 4, 5] },
+    { name: "Ihsan Kamil", scores: [5, 3, 4, 5, 4] },
+    { name: "Sarah Oktaviani", scores: [4, 5, 4, 3, 3] },
+    { name: "Hendra Wijaya", scores: [3, 4, 5, 4, 3] },
+    { name: "Ayu Lestari", scores: [5, 4, 5, 5, 5] }
 ];
 
 // Profil Target Ideal: K1=5, K2=4, K3=4, K4=4, K5=3
